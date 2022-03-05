@@ -54,6 +54,10 @@ input::placeholder {
   box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
+p, a {
+  color: #00ff88;
+}
+
 @media only screen and (max-width: 600px) {
   .card-login {
     width: 85%;

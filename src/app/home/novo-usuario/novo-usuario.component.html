@@ -4,14 +4,15 @@
       <br>
       E compartilhe suas melhores lembranças
       com o PHOTOBOOK <i class="fa fa-heart"></i></h5>
-    <form class="form">
+    <form class="form" [formGroup]="novoUsuarioForm" (submit)="cadastrar()">
       <div class="form-group">
         <label for="email" class="mt-2 mb-2">Email</label>
         <input class="form-control"
               type="email"
               name="email"
               placeholder="Email"
-              required>
+              required
+              formControlName="email">
       </div>
       <div class="form-group">
         <label for="nome" class="mt-2 mb-2">Nome Completo</label>
@@ -19,7 +20,8 @@
               type="text"
               name="nome"
               placeholder="Nome completo"
-              required>
+              required
+              formControlName="fullName">
       </div>
       <div class="form-group">
         <label for="usuario" class="mt-2 mb-2">Usuário</label>
@@ -27,7 +29,8 @@
               type="text"
               name="usuario"
               placeholder="Usuário"
-              required>
+              required
+              formControlName="userName">
       </div>
       <div class="form-group">
         <label for="senha" class="mt-2 mb-2">Senha</label>
@@ -35,7 +38,8 @@
               type="password"
               name="senha"
               placeholder="Senha"
-              required>
+              required
+              formControlName="password">
       </div>
       <button type="submit" class="btn btn-primary col-12 mt-4">
         Cadastrar

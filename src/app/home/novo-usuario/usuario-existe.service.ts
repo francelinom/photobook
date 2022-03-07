@@ -15,8 +15,8 @@ export class UsuarioExisteService {
         switchMap((nomeUsuario) =>
           this.novoUsuarioService.verificaUsuarioExistente(nomeUsuario)
         ),
-        map((usuarioExistente) =>
-          usuarioExistente ? { usuarioExistente: true } : null
+        map((usuarioExiste) =>
+          usuarioExiste ? { usuarioExistente: true } : null
         ),
         first()
       );

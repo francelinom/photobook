@@ -29,14 +29,9 @@
               name="nome"
               placeholder="Nome completo"
               required
-              minlength="4"
               formControlName="fullName">
       <app-mensagem mensagem="Nome incorreto"
                     *ngIf="novoUsuarioForm.get('fullName')?.errors?.required && novoUsuarioForm.get('fullName')?.touched">
-
-      </app-mensagem>
-      <app-mensagem mensagem="Nome deve ser maior que 3 caracteres"
-                    *ngIf="novoUsuarioForm.get('fullName')?.errors?.minlength && novoUsuarioForm.get('fullName')?.touched">
 
       </app-mensagem>
       </div>

@@ -67,7 +67,11 @@
               minlength="4"
               formControlName="password">
           <app-mensagem mensagem="Senha deve ser maior que 3 caracteres"
-                      *ngIf="novoUsuarioForm.get('password')?.errors?.minlength && novoUsuarioForm.get('password')?.touched">
+                        *ngIf="novoUsuarioForm.get('password')?.errors?.minlength && novoUsuarioForm.get('password')?.touched">
+
+          </app-mensagem>
+          <app-mensagem mensagem="Senha deve ser diferente do usuário"
+                        *ngIf="novoUsuarioForm.errors?.senhaIgualUsuario">
 
           </app-mensagem>
       </div>

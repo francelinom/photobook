@@ -1,0 +1,18 @@
+.sticky-top {
+  background: #201b2c;
+}
+
+.linha-horizontal {
+  width: 100%;
+  border: 1px solid #77ffc0;
+}
+
+.navbar-light .navbar-brand {
+  color: #77ffc0 !important;
+  margin-left: 30px;
+}
+
+.login {
+  color: #77ffc0 !important;
+  margin-right: 35px;
+}

@@ -1,0 +1,13 @@
+.linha-horizontal {
+  width: 100%;
+  border: 1px solid #77ffc0;
+  margin-bottom: 25px;
+}
+
+.cor-verde {
+  color: #77ffc0;
+}
+
+.cor-footer {
+  background: #201b2c;
+}

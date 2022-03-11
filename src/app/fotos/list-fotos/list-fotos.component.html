@@ -1,1 +1,4 @@
-<app-grade-fotos [fotos]="fotos"></app-grade-fotos>
+<div *ngIf="fotos$ | async as fotos">
+  <app-grade-fotos [fotos]="fotos"></app-grade-fotos>
+</div>
+

@@ -1,7 +1,9 @@
+import { switchMap } from 'rxjs/operators';
 import { FotosService } from './../fotos.service';
 import { UsuarioService } from './../../autenticacao/usuario/usuario.service';
 import { Fotos } from './../fotos';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-list-fotos',
@@ -9,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-fotos.component.css'],
 })
 export class ListFotosComponent implements OnInit {
-  fotos!: Fotos;
+  fotos$!: Observable<Fotos>;
 
   constructor(
     private usuarioService: UsuarioService,
@@ -17,11 +19,11 @@ export class ListFotosComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.usuarioService.retornaUsuario().subscribe((usuario) => {
-      const userName = usuario.name ?? '';
-      this.fotosService.listaDosuario(userName).subscribe((fotos) => {
-        this.fotos = fotos;
-      });
-    });
+    this.fotos$ = this.usuarioService.retornaUsuario().pipe(
+      switchMap((usuario) => {
+        const userName = usuario.name ?? '';
+        return this.fotosService.listaDosuario(userName);
+      })
+    );
   }
 }

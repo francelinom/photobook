@@ -1,27 +1,74 @@
-# Photobook
+# PHOTOBOOK
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
+<h1>
+  <img src="src/assets/img/tela_login.png">
+  <img src="src/assets/img/tela_cadastro.png">
+  <img src="src/assets/img/tela_fotos.png">
+</h1>
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Indice
 
-## Code scaffolding
+- [PHOTOBOOK](#photobook)
+  - [Indice](#indice)
+  - [Sobre](#sobre)
+  - [Funcionalidade da Aplicação](#funcionalidade-da-aplicação)
+  - [Tecnologias utilizadas](#tecnologias-utilizadas)
+  - [Como baixar o projeto](#como-baixar-o-projeto)
+  - [Autor](#autor)
+  
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Sobre 
 
-## Build
+O Projeto **PHOTOBOOK** foi desenvolvido como segundo projeto da mentoria **Conquiste sua vaga**. O projeto tem a finalidade de utilizar as melhores práticas para a tela de login, utilizando o Angular. O estilo da pagina foi utilizando o CSS, com cores no estilo dark. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+O **PHOTOBOOK** tem a tela de cadastrar imagens, mas essa parte de cadastrar as fotos ainda está em desenvolvimento. As imagens no inicio da pagina é como exemplo para ilustrar o possivel resultado final.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## Funcionalidade da Aplicação
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+A aplicação exemplo consiste em criar um cadastro de imagens com tela de login com as melhores práticas do Angular.
+com as seguintes funcionalidades:
+- Cadastrar fotos (Em desenvolvimento)
+- Remover Fotos (Em desenvolvimento)
+- Listar fotos
 
-## Further help
+---
+## Tecnologias utilizadas 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+O projeto foi desenvolvido utilizando as seguintes tecnologias
+- [Angular 12](https://angular.io/)
+- [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- JavaScript
+- TypeScript
+- HTML
+- CSS
+
+---
+
+## Como baixar o projeto
+
+```bash
+# Clonar o repositório em sua máquina 
+$ git clone https://github.com/francelinom/photobook.git
+
+# Entrar na pasta do projeto 
+$ cd photobook
+
+# Instalar todas as dependências 
+$ npm i
+
+# Iniciar o projeto 
+$ ng serve
+```
+---
+## Autor
+
+Desenvolvido por **Francelino Marcílio da Silva** 
+<h1>
+  <img src="src/assets/img/eu.jpeg">
+</h1>

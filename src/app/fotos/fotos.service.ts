@@ -19,7 +19,7 @@ export class FotosService {
   listaDosuario(nomeDoUsuario: string): Observable<Fotos> {
     const token = this.tokenService.retornaToken();
     const headers = new HttpHeaders().append('x-access-token', token);
-    return this.httpClient.get<Fotos>(`${API}/${nomeDoUsuario}photos`, {
+    return this.httpClient.get<Fotos>(`${API}/${nomeDoUsuario}/photos`, {
       headers,
     });
   }

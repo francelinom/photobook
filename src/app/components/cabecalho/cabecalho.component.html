@@ -3,18 +3,18 @@
     <a class="navbar-brand">PHOTOBOOK <i class="fa fa-book"></i></a>
     <div *ngIf="user$ | async as user">
       <div *ngIf="user.name; else login">
-        <i class="fa fa-user-circle mr-1"></i>
-        <a class="mr-1">{{user.name}}</a>
-        <a (click)="logout()"></a>
+        <i class="fa fa-user-circle m-2 cor-verde"></i>
+        <a class="m-2 cor-verde">{{user.name}}</a>
+        <a class="cor-verde m-2" (click)="logout()">Sair</a>
       </div>
     </div>
     <div class="linha-horizontal"></div>
   </nav>
 
   <ng-template #login>
-    <span class="navbar-text" *ngIf="user$ | async as user">
+    <span class="navbar-text">
       <a [routerLink]="['']" class="login">
-        <span *ngIf="user.name">Login</span>
+        <span>Login</span>
       </a>
     </span>
   </ng-template>

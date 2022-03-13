@@ -1,8 +1,8 @@
 <!-- <p class="text-center text-muted" *ngIf="!fotos.length">Descupe não há fotos</p> -->
 
-<div class="row">
-  <div *ngFor="let foto of fotos" class="col-4">
-    <a [routerLink]="['/fotos', foto.id]"></a>
+<div class="row cor-verde m-2">
+  <div *ngFor="let foto of fotos" class="col-4 mb-2">
+    <a [routerLink]="['/photos', foto.id]"></a>
     <app-cartao>
       <app-foto [url]="foto.url" [descricao]="foto.description">
 

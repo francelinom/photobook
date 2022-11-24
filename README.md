@@ -29,7 +29,7 @@ O **PHOTOBOOK** tem a tela de cadastrar imagens, mas essa parte de cadastrar as 
 
 ---
 
-## Funcionalidade da Aplicação
+## Funcionalidade da Aplicação.
 
 A aplicação exemplo consiste em criar um cadastro de imagens com tela de login com as melhores práticas do Angular.
 com as seguintes funcionalidades:
